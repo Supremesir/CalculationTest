@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CalculationTest</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="title_message">Calculation Test</string>
+    <string name="title_image_info">Title Image</string>
+    <string name="title_button_message">Enter</string>
+    <string name="hign_score_message">High Score : %d</string>
 </resources>
