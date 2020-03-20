@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="hugu_font">45sp</dimen>
+    <dimen name="huge_font">60sp</dimen>
+    <dimen name="big_font">45sp</dimen>
+    <dimen name="mid_font">30sp</dimen>
+    <dimen name="button_font">20sp</dimen>
 </resources>
