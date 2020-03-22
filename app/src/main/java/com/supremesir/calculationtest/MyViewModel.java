@@ -28,7 +28,7 @@ public class MyViewModel extends AndroidViewModel {
     private static final String SAVE_SHP_DATA_NAME = "save_shp_data_name";
     private static final String KEY_CURRENT_SCORE = "key_current_score";
 
-    private boolean win_flag = false;
+    public boolean win_flag = false;
 
     public MyViewModel(@NonNull Application application, SavedStateHandle handle) {
         super(application);
