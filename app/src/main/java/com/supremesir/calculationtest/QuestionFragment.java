@@ -38,6 +38,7 @@ public class QuestionFragment extends Fragment {
 
         myViewModel = new ViewModelProvider(requireActivity(), new SavedStateViewModelFactory(requireActivity().getApplication(), requireActivity()))
                 .get(MyViewModel.class);
+        myViewModel.generator();
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_question, container, false);
         binding.setData(myViewModel);
         binding.setLifecycleOwner(requireActivity());
@@ -78,6 +79,7 @@ public class QuestionFragment extends Fragment {
                         break;
                     case R.id.button_clear:
                         builder.setLength(0);
+//                        builder = new StringBuilder();
                         break;
                     default:
                         break;
@@ -107,7 +109,7 @@ public class QuestionFragment extends Fragment {
                 if (Integer.valueOf(builder.toString()).equals(myViewModel.getAnswer().getValue())) {
                     myViewModel.answerCorrect();
                     builder.setLength(0);
-                    builder.append(getString(R.string.answer_correct_message));
+                    binding.textView7.setText(getString(R.string.answer_correct_message));
                 } else {
                     controller = Navigation.findNavController(v);
                     if (myViewModel.win_flag) {
