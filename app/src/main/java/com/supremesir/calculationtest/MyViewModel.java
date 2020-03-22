@@ -115,5 +115,4 @@ public class MyViewModel extends AndroidViewModel {
         }
         generator();
     }
-
 }

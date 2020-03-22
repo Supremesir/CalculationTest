@@ -45,6 +45,8 @@ public class TitleFragment extends Fragment {
             public void onClick(View v) {
                 controller = Navigation.findNavController(v);
                 controller.navigate(R.id.action_titleFragment_to_questionFragment);
+                myViewModel.getCurrentScore().setValue(0);
+                myViewModel.generator();
             }
         });
 

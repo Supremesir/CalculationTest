@@ -60,7 +60,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{@string/lose_score_message(data.currentScore )}"
+                android:text="@{@string/lose_score_message(data.currentScore)}"
                 android:textSize="@dimen/mid_font"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -71,7 +71,7 @@
                 tools:text="@string/lose_score_message" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_lose"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/button_back_to_title"

@@ -70,7 +70,7 @@
                 tools:text="@string/win_score_message" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/button_win"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/button_back_to_title"

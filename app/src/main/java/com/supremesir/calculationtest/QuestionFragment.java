@@ -117,6 +117,7 @@ public class QuestionFragment extends Fragment {
                         myViewModel.win_flag = false;
                         myViewModel.save();
                     } else {
+//                        myViewModel.answerCorrect();
                         controller.navigate(R.id.action_questionFragment_to_loseFragment);
                     }
                 }
