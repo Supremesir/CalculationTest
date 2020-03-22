@@ -44,27 +44,27 @@ public class MyViewModel extends AndroidViewModel {
         this.handle = handle;
     }
 
-    MutableLiveData<Integer> getHighScore() {
+    public MutableLiveData<Integer> getHighScore() {
         return handle.getLiveData(KEY_HIGH_SCORE);
     }
 
-    MutableLiveData<Integer> getLeftNumber() {
+    public  MutableLiveData<Integer> getLeftNumber() {
         return handle.getLiveData(KEY_LEFT_NUMBER);
     }
 
-    MutableLiveData<Integer> getRightNumber() {
+    public  MutableLiveData<Integer> getRightNumber() {
         return handle.getLiveData(KEY_RIGHT_NUMBER);
     }
 
-    MutableLiveData<String> getOperator() {
+    public MutableLiveData<String> getOperator() {
         return handle.getLiveData(KEY_OPERATOR);
     }
 
-    MutableLiveData<Integer> getAnswer() {
+    public MutableLiveData<Integer> getAnswer() {
         return handle.getLiveData(KEY_ANSWER);
     }
 
-    MutableLiveData<Integer> getCurrentScore() {
+    public MutableLiveData<Integer> getCurrentScore() {
         return handle.getLiveData(KEY_CURRENT_SCORE);
     }
 
