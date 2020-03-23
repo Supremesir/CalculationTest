@@ -106,6 +106,9 @@ public class QuestionFragment extends Fragment {
         binding.buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (builder.length() == 0) {
+                    builder.append("-1");
+                }
                 if (Integer.valueOf(builder.toString()).equals(myViewModel.getAnswer().getValue())) {
                     myViewModel.answerCorrect();
                     builder.setLength(0);
